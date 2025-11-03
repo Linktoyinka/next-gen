@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@theme {
+    --color-orange-main: #CE7D63;
+    --color-dark-main: #0F0F0F;
+    --color-dark-sec: #1C1C21;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+h1 {
+  @apply text-[28px] md:text-[58px] 2xl:text-[78px] font-semibold text-[#F9EFEC] uppercase;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+h2 {
+  @apply text-[28px] md:text-[38px] 2xl:text-[48px] font-semibold text-[#F9EFEC] uppercase;
+}
+
+h3 {
+  @apply text-xl md:text-[22px] 2xl:text-[30px] font-medium  text-[#F9EFEC] uppercase;
+}
+
+h4 {
+  @apply text-lg md:text-[20px] 2xl:text-2xl font-medium  text-[#F9EFEC] uppercase;
+}
+
+p {
+  @apply text-lg text-[#B3B3B2] ;
+}
+
+
+
+
+
+
+
+
+.container {
+  margin: auto;
+  max-width: 1920px;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media screen and (max-width: 1025px) {
+  .container {
+    /* max-width: 1000px; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1440px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
