@@ -7,6 +7,9 @@ import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
 import { GoDotFill } from "react-icons/go";
 import Button from "@/components/ui/button";
+import Testimonial from "@/components/layout/testimonial";
+import Faq from "@/components/layout/faq";
+import Footer from "@/components/layout/footer";
 
 const Home = () => {
   return (
@@ -205,12 +208,17 @@ const Home = () => {
                   </div>
                 </div>
 
-                  <Button value="Book a call" href="/signup" type="solid" className="w-full" />
+                  <Button value="Book a call" href="#" type="solid" className="w-full" />
               </div>
             </div>
           ))}
         </div>
       </section>
+
+      <Testimonial />
+
+      <Faq />
+
     </main>
   );
 };

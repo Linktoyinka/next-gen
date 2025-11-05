@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Button = ({ value, type, href, onClick, isButton, className,  }) => {
   const baseClasses = `text-lg flex items-center justify-center gap-3 uppercase w-fit py-3 px-5 md:py-3 md:px-6 text-center rounded-lg m-auto ${className}`;
-  const outlinedClasses = `border border-orange-main text-orange-main hover:bg-orange-main hover:bg-opacity-10 ${className}`;
+  const outlinedClasses = `bg-dark-main text-[#F3DFD8] hover:bg-opacity-10 ${className}`;
   const solidClasses = `text-dark-main bg-orange-main hover:bg-opacity-80 `;
 
   const combinedClasses = `${baseClasses} ${type === "outlined" ? outlinedClasses : solidClasses}`;

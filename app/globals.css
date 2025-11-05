@@ -23,10 +23,26 @@ h4 {
   @apply text-lg md:text-[20px] 2xl:text-2xl font-medium  text-[#F9EFEC] uppercase;
 }
 
+h5 {
+  @apply text-lg 2xl:text-xl font-medium  text-[#F3DFD8] ;
+}
+
 p {
   @apply text-lg text-[#B3B3B2] ;
 }
 
+
+select, input, textarea {
+  @apply bg-dark-main text-[#F3DFD8] placeholder:text-[#666666] rounded-lg p-4 outline-none mt-2;
+}
+
+textarea {
+  @apply h-32 resize-none;
+}
+
+label {
+  @apply text-[#F3DFD8] font-medium uppercase text-lg;
+}
 
 
 

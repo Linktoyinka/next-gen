@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import HeroSlider from "./hero-slider";
+import { heroKeywords } from "@/lib/data";
 
 const Hero = ({
   heading,
@@ -22,7 +23,7 @@ const Hero = ({
           {desc && <p className="text-lg text-[#676665]! py-4">{desc}</p>}
         </div>
 
-        {/* {showMarquee && <MarqueeTree />} */}
+        {/* {showMarquee && <MarqueeTree keywords={heroKeywords} />} */}
       </div>
 
       {/* Right/Card Section */}
