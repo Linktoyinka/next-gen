@@ -6,33 +6,45 @@ import Link from "next/link";
 import React from "react";
 import HeroSlider from "./hero-slider";
 import { heroKeywords } from "@/lib/data";
+import Button from "../button";
+import Achievement from "./achievement";
 
 const Hero = ({
   heading,
   desc = "",
   showMarquee = false,
-  sliderData = null, 
-  showRight = true,  
+  slider = false,
+  showRight = true,
+  showAchievement = false,
 }) => {
   return (
-    <section className="grid md:grid-cols-3 gap-5">
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-5">
       {/* Left/Main Section */}
-      <div className="md:col-span-2 bg-dark-sec p-5 rounded-2xl">
-        <div className="lg:p-10 2xl:p-20">
+      <div className="col-span-1 md:col-span-2 bg-dark-sec p-5 rounded-2xl">
+        <div className="lg:p-10 2xl:p-20 space-y-4 pb-5 md:pb-0">
           <h1>{heading}</h1>
-          {desc && <p className="text-lg text-[#676665]! py-4">{desc}</p>}
+          {desc && <p className="text-lg text-[#676665]!">{desc}</p>}
+
+          <Button
+            className="w-full md:hidden"
+            href="#"
+            type="solid"
+            value="Book a call"
+          />
         </div>
 
-        {/* {showMarquee && <MarqueeTree keywords={heroKeywords} />} */}
+        {showMarquee && <MarqueeTree keywords={heroKeywords} />}
       </div>
 
       {/* Right/Card Section */}
       {showRight && (
-        <div className="hidden md:block">
-          {sliderData ? (
-            <HeroSlider data={sliderData} />
+        <div>
+          {slider ? (
+            <HeroSlider />
+          ) : showAchievement ? (
+            <Achievement />
           ) : (
-            <Link className="relative" href="#">
+            <Link className="relative hidden md:block" href="#">
               <Image
                 src="/images/image.png"
                 alt="default card"

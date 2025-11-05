@@ -26,10 +26,9 @@ const Faq = () => {
             >
               <div className="space-y-4 w-full">
                 <h4>{faq.question}</h4>
-                <hr className="border-[#262626]" />
-                
+                                
                 {openIndex === index && (
-                  <p>{faq.answer}</p>
+                  <p  className="pt-4 border-t border-[#262626]">{faq.answer}</p>
                 )}
               </div>
 
