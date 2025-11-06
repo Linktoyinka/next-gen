@@ -18,7 +18,7 @@ const Navigation = () => {
     "text-base 2xl:text-lg font-medium px-4 2xl:px-6 py-3 rounded-lg transition-colors uppercase font-(family-name:--font-roboto-mono)";
 
   return (
-    <header className="container my-3!">
+    <header className="container mt-3! mb-10!">
       <div className="bg-dark-sec px-5 py-2 lg:px-5 lg:py-5 rounded-xl lg:rounded-2xl flex items-center justify-between">
         <Link href="/" className="w-fit">
           <Image src="/logo/main.svg" alt="next-gen" width={100} height={100} />
