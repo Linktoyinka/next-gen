@@ -22,7 +22,7 @@ Its primary goal is to attract new clients by presenting a professional online p
 
 ### 📁 Project Structure
 Here is an overview of the project's folder structure, reflecting the Next.js App Router and component organization.
-next-gen/
+````next-gen/
 ├── app/
 │   ├── (main)/           # Main route group with shared layout
 │   │   ├── about/        # /about route
@@ -54,6 +54,7 @@ next-gen/
 ├── package.json          # Project dependencies and scripts
 ├── postcss.config.mjs    # PostCSS configuration
 └── README.md             # This file
+````
 
 ### 🛠️ Built With
 
