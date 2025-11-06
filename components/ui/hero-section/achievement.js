@@ -5,11 +5,11 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Achievement = () => {
   return (
-    <div className="bg-dark-sec p-3 md:p-5 rounded-2xl grid grid-cols-2 gap-3 md:gap-5">
+    <div className="bg-dark-sec p-3 md:p-5 rounded-2xl grid grid-cols-2 gap-3 md:gap-5 h-full">
       {counterData.map((counter, index) => (
         <div
           key={index}
-          className="text-center bg-[#1A1A1A] p-3 md:p-5 rounded-lg space-y-2"
+          className="text-center bg-[#1A1A1A] p-3 md:p-5 rounded-lg space-y-2 grid place-content-center"
         >
           <p className="text-lg text-[#B3B3B2] font-(family-name:--font-roboto-mono)">
             {counter.title}

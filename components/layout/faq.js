@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import Heading from "@/components/ui/heading";
-import ContactForm from "../forms/contactForm";
+import FaqForm from "../forms/faqForm";
 import { TiMinus, TiPlus } from "react-icons/ti";
 import { faqData } from "@/lib/data";
 
@@ -47,7 +47,7 @@ const Faq = () => {
 
           <hr className="border-[#262626]" />
 
-          <ContactForm />
+          <FaqForm />
         </div>
       </div>
     </section>
