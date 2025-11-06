@@ -46,7 +46,7 @@ const Hero = ({
           ) : (
             <Link className="relative hidden md:block" href="#">
               <Image
-                src="/images/image.png"
+                src="/images/real-eastate.png"
                 alt="default card"
                 width={500}
                 height={500}
